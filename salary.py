@@ -1,0 +1,13 @@
+bs = float(input("enter basic salary:"))
+hra_per = float(input("enter HRA persentage:"))
+da_per = float(input("enter DA persentage:"))
+pf_per = float(input("enter PF persentage:"))
+hra_amt = (bs * hra_per)/100
+da_amt = (bs * da_per)/100
+pf_amt = (bs * pf_per)/100
+net_salary = bs + hra_amt + da_amt - pf_amt 
+print("basic salary=", bs)
+print("HRA amount=", hra_amt)
+print("DA amount=", da_amt)
+print("PF amount=", pf_amt)
+print("net salary=", net_salary)
